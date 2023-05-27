@@ -1,0 +1,124 @@
+.hero {
+  background: no-repeat center/cover
+    url("F:\Projects\car-rent-with-react\src\assets\heroCarjpg.jpg");
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+form {
+  display: flex;
+  font-weight: 600;
+  background-color: rgba(243, 243, 243, 0.8);
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  margin: auto;
+  margin-top: 11%;
+  padding: 6px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+}
+
+form label {
+  font-size: 1rem;
+  padding-bottom: 2px;
+}
+
+.text,
+.starting_form,
+.up_until {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins", serif;
+}
+
+.starting_form,
+.up_until {
+  border-left: 2px solid #a3a3a3;
+  padding-left: 10px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form .input {
+  width: 300px;
+  font-size: 1rem;
+}
+
+input[type="date"] {
+  color: #6e6e6e;
+  font-family: "Poppins", serif;
+}
+
+.search_btn {
+  display: flex;
+  align-items: center;
+}
+
+.search_btn button {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto 2rem;
+  }
+
+  .text,
+  .starting_form,
+  .up_until {
+    width: 100%;
+    padding: 0.1rem;
+  }
+
+  .starting_form,
+  .up_until {
+    border-left: none;
+  }
+
+  .border {
+    border-top: 1px solid rgb(156, 156, 156);
+    padding: 10px;
+  }
+
+  form label {
+    padding: 0.6rem 0;
+  }
+
+  .search_btn {
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid rgb(156, 156, 156);
+  }
+
+  form .search_btn .btn {
+    display: block;
+    background-color: rgb(59, 79, 255);
+    color: white;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border: none;
+    padding: 10px;
+    margin: 0.6rem auto;
+    margin-top: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .icon {
+    display: none;
+  }
+}
